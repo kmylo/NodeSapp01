@@ -55,7 +55,7 @@ $(document).ready(function() {
     }]
   };
 
-  $('#slick1, #slick2, #slick3, #slick4, #slick5, #slick6, #slick7, #slick8, #slick9, #slick10, #slick1xs, #slick2xs, #slick3xs, #slick4xs, #slick5xs, #slick6xs, #slick7xs, #slick8xs, #slick9xs, #slick10xs')
+  $('.slick-slide')
     .on('init', function(event, slick) {
 
       slick.buildOut = function buildOut() {
@@ -162,115 +162,7 @@ $(document).ready(function() {
     })
     .slick(slickConfig);
 });
-$(document).ready(function() {
-  'use strict';
-  $('#slick1')
-    .on('beforeChange', function(event, slick, currentSlide) {
 
-    })
-    .on('breakpoint', function(event, slick, breakpoint) {
-      $('#slick1').slick('slickGoTo');
-    })
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick1xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick1xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick1')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick2')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick2xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick2xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick2')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick3')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick3xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick3xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick3')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick4')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick4xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick4xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick4')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick5')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick5xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick5xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick5')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick6')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick6xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick6xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick6')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick7')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick7xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick7xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick7')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick8')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick8xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick8xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick8')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick9')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick9xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick9xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick9')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick10')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick10xs')
-        .slick('slickGoTo', currentSlide, true)
-    });
-  $('#slick10xs')
-    .on('afterChange', function(event, slick, currentSlide) {
-      $('#slick10')
-        .slick('slickGoTo', currentSlide, true)
-    });
-});
 $(document).ready(function() {
   $('.slick-highlight')
     .on('afterChange', function(event, slick, currentSlide) {
